@@ -265,6 +265,9 @@ body
 
 .text{
     color: white;
+    font-size: 30px;
 }
 
-/
+.direct-chat-messages {
+    height: 80vh;
+}
