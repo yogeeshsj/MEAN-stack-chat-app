@@ -269,5 +269,5 @@ body
 }
 
 .direct-chat-messages {
-    height: 80vh;
+    height: 80vh !important;
 }
