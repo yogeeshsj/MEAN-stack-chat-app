@@ -2,15 +2,11 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "Chat application for local usage",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sudheeshshetty/Chat"
-  },
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "Sudheesh Shetty",
+  "author": "Yogeesh",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -25,7 +21,7 @@
       "port": "8080"
     },
     "db": {
-      "url": "mongodb://localhost:27017/chat"
+      "url": "mongodb://yogeesh:yogeesh@ds019806.mlab.com:19806/reverse_chat"
     }
   }
 }

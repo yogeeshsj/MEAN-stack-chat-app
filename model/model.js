@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-mongoose.connect("mongodb://localhost:27017/chat");
+mongoose.connect("mongodb://yogeesh:yogeesh@ds019806.mlab.com:19806/reverse_chat");
 
 mongoose.connection.on('open', function (ref) {
     console.log('Connected to mongo server.');
@@ -12,7 +12,6 @@ mongoose.connection.on('error', function (err) {
     console.log(err);
 });
 
-mongoose.connect('mongodb://localhost/mongodb');
 
 module.exports.user=mongoose.model('User',new Schema({
     name:String,
