@@ -164,6 +164,8 @@ app.controller('myController',['$scope','socket','$http','$mdDialog','$compile',
     });
     
     $scope.group_message= function(message){
+        var message = message.split(/\s/).reverse().join(" ");
+
         div = document.createElement('div');
         div.innerHTML='<div class="direct-chat-msg"> \
                         <div class="direct-chat-info clearfix">\
