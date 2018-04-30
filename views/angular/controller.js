@@ -256,7 +256,7 @@ app.service('encrypt', function() {
     }
 });
 
-app.controller('registerController',['$scope','encrypt','$https','$state',function($scope,encrypt,$http,$state){
+app.controller('registerController',['$scope','encrypt','$http','$state',function($scope,encrypt,$http,$state){
     url= location.host;
 
     $scope.user={
