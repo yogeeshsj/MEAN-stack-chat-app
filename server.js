@@ -7,6 +7,9 @@ app.use(express.static('./'));
 
 require("./controller/controller.js")(app,io);
 
+var port_number = server.listen(process.env.PORT || 3000);
+app.listen(port_number);
+
 http.listen(8080,function(){
     console.log("Node Server is setup and it is listening on http://"+ip.address()+":8080");
 })
