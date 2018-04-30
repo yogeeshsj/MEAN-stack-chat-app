@@ -5,6 +5,9 @@ var io = require('socket.io')(http);
 var ip = require('ip');
 app.use(express.static('./')); 
 
+
+const port = process.env.PORT || 3338;
+
 require("./controller/controller.js")(app,io);
 
 http.listen(8080,function(){
