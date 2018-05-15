@@ -160,11 +160,11 @@ app.controller('myController',['$scope','socket','$http','$mdDialog','$compile',
                             </div>';
             document.getElementById("group").appendChild(div);
             document.getElementById("group").scrollTop=document.getElementById("group").scrollHeight;
-        }
+        }       
     });
     
     $scope.group_message= function(message){
-        var message = message.split(/\s/).reverse().join(" ");
+        // var message = message.split(/\s/).reverse().join(" ");
 
         div = document.createElement('div');
         div.innerHTML='<div class="direct-chat-msg"> \
