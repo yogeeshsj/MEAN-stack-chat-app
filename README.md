@@ -8,4 +8,4 @@ Instalation needed
          npm socket.io
          npm express
 Run
-          npm start
+          npm start# MEAN-stack-chat-app
